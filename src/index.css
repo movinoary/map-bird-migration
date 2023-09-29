@@ -1,13 +1,81 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.leaflet-container {
+  height: 100vh;
+  z-index: 10;
+}
+
+.modal-filter {
+  position: fixed;
+  z-index: 20;
+  top: 1rem;
+  right: -1rem;
+  width: 250px;
+  height: 270px;
+  padding: 1rem 2rem 1rem 1rem;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  transition: all ease-in-out 0.5s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.select-row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+}
+
+.select-filter {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.select-filter p {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.btn-filter {
+  cursor: pointer;
+  width: 100%;
+  padding: 5px;
+  border: none;
+  background-color: #006ab6;
+  color: #fff;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.btn-close {
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  left: -1.2rem;
+  width: 30px;
+  height: 30px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 5px;
+  border: none;
+  background-color: #006ab6;
+  color: #fff;
 }
