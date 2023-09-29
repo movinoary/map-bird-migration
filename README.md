@@ -1,6 +1,6 @@
 # Wildlife Data Visualization WEBGIS
 
-Web Visualization Data migrasi burung di indonesia. Data migrasi burung di ambil dari berbagai situs national geographic indonesia, dan dikemas menjadi data geojson berbentuk line. Kemudian didalamnya terdapat pergantian tipe line menjadi point untuk memberi titik sebagai penanda jenis burung. Menggunakan leaflet sebagai base map.
+Web Visualization Data migrasi burung di indonesia. Data migrasi burung di ambil dari situs national geographic indonesia, dan dikemas menjadi data geojson berbentuk line. Kemudian didalamnya terdapat pergantian tipe line menjadi point untuk memberi titik sebagai penanda jenis burung. Menggunakan leaflet sebagai base map.
 
 ![Desain](https://github.com/movinoary/map-bird-migration/blob/master/src/assets/desain.png?raw=true)
 
